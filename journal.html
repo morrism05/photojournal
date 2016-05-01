@@ -1,0 +1,62 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Sabbatical Photo Journal</title>
+
+<link rel="stylesheet" type="text/css" media="screen" href="screen.css" />
+<style type="text/css">
+
+</style>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/timestamps.js" type="text/javascript"></script>
+<script src="js/journal.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<h1>Michael's Sabbatical 2009 Photo Journal</h1>
+
+<table class="content">
+<tr>
+<td>
+<div id="textborder" class="bwborder">
+    <div id="textpadding">
+        <div id="textpane">
+        <div id="journalcontent"></div>
+        <script> $("#journalcontent").load("journalfiles/sabbatical2009.html"); </script>
+        </div> <!--textpane-->
+        <div id="pagenavigation" align="center">
+            <a id="prevpage" href=""> &lt Last </a> |
+            <a id="tocpage" href="#toc"> Table of Contents </a> |
+            <a id="nextpage" href=""> Next &gt </a>
+        </div> <!--pagenavigation-->			
+    </div> <!--textpadding-->
+</div> <!--textborder-->
+<form id="thumbfilter" action="">
+<select id="thumbsettings">
+    <option value="Super">Short Slide Show</option>
+    <option value="Per Day Slide Show">Medium Slide Show</option>
+    <option value="FirstPass">Long Slide Show</option>
+    <option value="All" selected="selected">All Photos</option>
+</select>
+</form>
+</td>
+<td>
+<div id="thumbborder">
+    <div id="thumbpane">
+        <div id="serverresults">
+        </div> <!--serverresults-->
+    </div> <!--thumbpane-->
+</div> <!--thumbborder-->
+<div id="imageborder">
+    <div id="imagepane">
+    </div> <!--imagepane-->
+</div> <!--imageborder-->
+</td>
+</tr>
+</table>
+
+</body>
+</html>

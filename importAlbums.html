@@ -1,0 +1,63 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Photo Journal Import Albums</title>
+
+<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="screen.css" />
+
+</head>
+<body>
+
+    <h1>Import Albums</h1>
+
+    <!--<div id="content" class="content bwborder">-->
+	<table class="content">
+	<tr>
+	<td>
+	<div id="textborder" class="bwborder">
+		<div id="textpadding">
+			<div id="textpane">		
+                
+                <p>Enter your Google/Picasa user name to browse your publicly visible albums.  
+                Import album to make it available for use with this website.</p>
+                <form onsubmit="return false">
+                    Picasa/Google user name:
+                    <input id="picasaUser" type="text" />
+                    <button id="loadAlbums_button">Load Albums</button>
+                    <br />
+                    Album:
+                    <select id="albumSelect"></select>
+                    <button id="importPhotos_button">Import Album</button>
+                </form>
+                Album's timespan: <b><span id="albumStartTime">???</span></b> to <b><span id="albumEndTime">???</span></b>.
+                <hr />
+                <div id="serverresults">
+                </div> <!--serverresults-->
+            </div> <!--textpane-->
+		</div> <!--textpadding-->
+	</div> <!--textborder-->
+	</td>
+	<td>
+	<div id="thumbborder">
+		<div id="thumbpane">
+            <!-- <div id="serverresults"> </div> -->
+		</div> <!--thumbpane-->
+	</div> <!--thumbborder-->
+	<div id="imageborder">
+		<div id="imagepane">
+		</div> <!--imagepane-->
+	</div> <!--imageborder-->
+	</td>
+	</tr>
+	</table>
+
+    
+    <!-- Scripts -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/timestamps.js" type="text/javascript"></script>
+    <script src="js/importAlbums.js" type="text/javascript"></script>
+    
+</body>
+</html>

@@ -1,0 +1,295 @@
+/**********************************
+
+Use: Reset Styles for all browsers
+
+***********************************/
+	
+body, p, blockquote {
+	font-size:100%;
+	font-family:Verdana,sans-serif;
+	font-size:12px;
+	color:#444444;
+	margin: 0;
+	padding: 0;
+	line-height:18px;
+}
+
+a img, iframe {
+	margin:2px;
+	padding:1px;
+	border:2px solid white;
+	background-color:black;
+}
+
+
+div.textborder
+{
+	position:absolute;
+	padding:1px;
+	border:2px solid white;
+	background-color:black;
+	top:30px;
+	left:20px; 
+	width:550px;
+	/* thumb tray style
+	height:500px; 
+	*/
+	/* two column style */
+	height:700px; 
+}
+div.textpane
+{
+	background-color:white;
+	padding:20px;
+	width:510px;
+	/* thumb tray style
+	height:460px;
+	*/
+	/* two column style */
+	height:660px;
+	overflow:auto;
+}
+
+.timestamp
+{
+	display: block;
+}
+
+
+.full_image { 
+	padding:1px;
+	border:2px solid white;
+	background-color:black;
+	max-height:700px;
+	max-width:900px;
+}
+div.imagepane
+{
+	position:absolute;
+	top:30px;
+	left:590px;
+	
+	/* thumb tray style
+	width:710px;
+	height:500px;
+	*/
+	
+	/* two column style */
+	width:700px;
+	height:700px;
+	display:none;
+}
+
+div.thumbborder
+{
+	position:absolute;
+	padding:1px;
+	border:2px solid white;
+	background-color:black;
+	top:30px;
+	left:590px; 
+	width:650px;
+	/* thumb tray style
+	height:500px; 
+	*/
+	/* two column style */
+	height:708px; 
+}
+
+
+img.thumbnail
+{
+	/*
+	max-height:192px;
+	max-width:192px;
+	*/
+}
+
+img.thumbnail_timestamp
+{
+	font-size:160px;
+	position:relative;              
+	display:inline-block;
+	height:auto;
+	width:202px;
+	margin:4px;
+	text-align:center;
+	vertical-align:middle;
+}
+
+div.thumbnail_spacer
+{
+	font-size:160px;
+	position:relative;              
+	display:inline-block;
+	height:auto;
+	width:202px;
+	margin:4px;
+	text-align:center;
+	vertical-align:middle;
+}
+
+div.thumbpane
+{
+	/*position:absolute;*/
+	overflow:auto;
+	
+	/* thumb tray style
+	top:550px;
+	left:20px; 
+	width:1245px;
+	height:220px;
+	white-space: nowrap;
+	*/
+	
+	/* two column style */
+	top:30px;
+	left:590px; 
+	width:650px;
+	height:708px;
+	
+}
+
+div.debugpane
+{
+	position:absolute;
+	border:1px solid red;
+	background-color:white;
+	bottom:0px;
+	left:1350px; 
+	width:300px;
+	overflow:auto;
+}
+	
+/* Headers
+------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+h1 { font-size: 150%; }
+h2 { font-size: 140%; }
+h3 { font-size: 130%; }
+h4 { font-size: 120%; }
+h5 { font-size: 110%; }
+	
+/* Lists
+------------------------------*/
+	
+ul, ol, dl, li, dt, dd {
+	margin: 0;
+	padding: 0;
+}
+	
+/* Links
+------------------------------*/
+
+a, a:link {}
+a:visited {}
+a:hover {}
+a:active {}
+
+/* Forms
+------------------------------*/
+
+form, fieldset {
+	margin: 0;
+	padding: 0;
+}
+	
+fieldset { border: 1px solid #000; }
+
+legend {
+	padding: 0;
+	color: #000;
+}
+
+input, textarea, select {
+	margin: 0;
+	padding: 1px;
+	font-size: 100%;
+	font-family: inherit;
+}
+	
+select { padding: 0; }
+
+body {
+	padding: 0 10px;
+	font: normal 82.5% "Lucida Grande", Helvetica, Verdana, Arial;
+	background-color:black;
+}
+	
+p { margin: 10px 0; }
+
+li { margin-left: 10px; }
+
+h3 { margin: 5px 0; }
+
+.bghighlight { 
+	background-color: #f99;
+	/*background-color: #FFEBCD;*/ 
+	/*border: 1px solid #f99;*/
+}
+.bgred { background-color: red; display: block; }
+.blue { color: blue; }
+.green { color: green; }
+
+#rating {
+	border: 1px solid black;
+	margin: 5px;
+	padding: 5px;
+}
+
+table {
+	border: 1px solid #666;
+	margin: 20px 0 20px 0 !important;
+}
+
+th, td {
+	padding: 2px 4px 2px 4px !important;
+	text-align: left;
+	vertical-align: top;
+}
+
+th {
+	background-color: #fc0;
+}
+
+th:hover {
+	background-color: #fc7;
+}
+
+tbody tr.even {
+	background-color: #fea
+}
+
+tr a {
+	color: rgb(102, 102, 102);
+	text-decoration: none;
+}
+tr a:hover {
+	text-decoration: underline;
+}
+
+dl dd {
+	margin-left: 10px;
+}
+
+dl dt {
+	font-weight: bold;
+}
+
+dl {
+	border: 1px solid black;
+	margin: 5px;
+}
+
+.highlight {
+	border: 5px dotted #eee;
+}
+
+.error {
+	background-color: #fee;
+}

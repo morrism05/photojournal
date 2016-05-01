@@ -1,0 +1,81 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Place Timestamps Tool</title>
+
+<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="screen two columns 3-16-10.css" />
+<style type="text/css">
+</style>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script src="jquery-fieldselection.js" type="text/javascript"></script>
+<!-- The ordering of these includes is important.  journalsCombo.js needs to occur before placetimestamps.js -->
+<script src="js/timestamps.js" type="text/javascript"></script>
+<script src="js/journalsCombo.js" type="text/javascript"></script>
+<script src="js/placetimestamps.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+
+<h1>Place Timestamps Tool</h1>
+
+<div class="textborder">
+<div class="textpane" id="textpane">
+
+<b>Journal to Annotate:</b>
+<select id="newOrExistingJournalSelect"></select>
+<p>
+<b>Instructions:</b>
+<span class="makeJournalEntry">
+    Enter the date and title for the journal entry then type (or paste) the content of the entry into the text area.
+</span>
+<span class="placeTimestamps" style="display:none">
+    Drag a thumbnail onto a paragraph to assign the image's date taken timestamp to the paragraph.
+</span>
+</p>
+<b>Date (mm/dd/yyyy):</b>
+<input id="datepicker" type="text" width="100" />
+<span class="makeJournalEntry">
+    <br />    
+    <form id="" onsubmit="return false">
+        <b>Title:</b>
+        <input type="text" id="entryTitle" />
+        <hr />
+        <textarea id="entryContent" name="textarea" style="width:100%;" rows="20"></textarea>
+    </form>
+    <br />
+    <button id="btnSave">Save Journal</button>
+</span> <!--makeJournalEntry-->
+
+<span class="placeTimestamps" style="display:none">
+    <br />
+    <b>Interval (in days):</b>
+    <input type="text" id="intervalInDays" value="1" width="50" />
+    <br />
+    <button id="btnGetThumbnails">Get thumbnails</button>
+    <b>Journal Name:</b> <input id="journalName" type="text" readonly>
+    <hr />        
+    <div id="textformarkup" cols="65" rows="39" wrap="logical" name="code" height="100%" width="100%"></div>
+    <hr />
+    <button id="btnApplyTimestamps">Save Timestamps</button>
+</span> <!--placeTimestamps-->
+
+</div> <!--textborder-->
+</div> <!--textpane-->
+
+<div class="imagepane">
+</div> <!--imagepane-->
+
+<div class="thumbborder">
+	<div class="thumbpane">
+		<div class="serverresults">
+		</div> <!--serverresults-->
+	</div> <!--thumbpane-->
+</div> <!--thumbborder-->	
+
+</body>
+</html>
